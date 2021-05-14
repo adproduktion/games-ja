@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+/* sizes */
+.w-50 {
+    width: 50%;
+}
+.w-100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+/* / sizes */
+
+/* screens */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 400;
+    color: white;
+}
+/* / screens */
+
+/* screen login */
+.screen-login form {
+    margin-top: 30px;
+}
+.screen-login input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 6px;
+    margin-top: 12px;
+}
+/* / screen login */
+
+/* flex */
+.flex {
+    display: flex;
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+/* / flex */
+
+.hidden {
+    display: none;
+}
+
+/* header */
+header {
+    background: rgba(128, 128, 128, 0.7);
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 300;
+}
+/* / header */
+
+/* game zone */
+.game-zone {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg.jpeg);
+    background-size: cover;
+}
+.game-element {
+    position: absolute;
+}
+.player {
+    width: 50px;
+    height: 115px;
+    background-image: url(../images/player.png);
+    background-size: contain;
+}
+.player.shot-space:after {
+    content: '';
+    width: 28px;
+    height: 100vh;
+    position: absolute;
+    background: url(../images/pattern-space.png);
+    bottom: 100%;
+    left: 12px;
+}
+.garbage-1 {
+    background: url(../images/garbage-1.png);
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+.garbage-2 {
+    background: url(../images/garbage-2.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+}
+.alert-success {
+    background: green;
+}
+.alert-danger {
+    background: red;
+}
+/* / game zone */
+#screen-results{
+    display: none;
+}
+#screen-game{
+    display: none;
+}
+#password{
+    width: 200px;
+    height: 30px;
+}
+.alert{
+    display: none;
+}
+#alert-success{
+    display: none;
+}
+#alert-danger{
+    display: none;
+}
