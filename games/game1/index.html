@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гонщик</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="screen screen-login" id="screen-login">
+        <div>
+            <h2>Начало игры</h2>
+            <br>
+            <div class="selection-cars">
+                <img src="assets/images/car.png" id="car1" onclick="getСar(this)"  class="selection-car">
+                <img src="assets/images/car2.png" id="car2" onclick="getСar(this)"  class="selection-car">
+                <img src="assets/images/car3.png" id="car3" onclick="getСar(this)"  class="selection-car">
+            </div>
+            <button class="w-100" id="game-start" onclick="t()" disabled>Играть</button>
+        </div>
+    </div>
+
+    <div class="screen screen-results" id="screen-results">
+        <div>
+            <h2>Игра завершена</h2>
+            <div>
+                <br>
+                <p>
+                    Вы продержались <span id="time-rezults">02:50</span>, из них <span id="time-rezults-angry">00:14</span> в режиме ярости
+                </p>
+                <p>
+                    Прошлый игрок продержался <span id="time-rezults-last">01:15</span>
+                </p>
+
+                <div class="alert alert-success" id="alert-success">
+                    Вы выиграли!
+                </div>
+
+                <div class="alert alert-danger" id="alert-danger">
+                    Вы проиграли!
+                </div>
+
+                <button class="w-100" id="restart" onclick="Restart()">Играть сначала</button>
+            </div>
+        </div>
+    </div>
+    <div id="game-zone-angry"><!-- Зона ярости  -->
+
+    </div>
+    <div class="screen-game" id="screen-game">
+        <header>
+            <div class="flex flex-jc-sb">
+                <div class="text-center">
+                    Используется машина: <span id="car">Car 1</span>
+                </div>
+                <div class="text-center">
+                    Прошло времени: <span id="timer">00:00</span>
+                </div>
+                <div class="text-center">
+                    Жизни: <span id="heart">3</span>
+                </div>
+            </div>
+        </header>
+        <canvas class="game-zone" id="game-zone">
+
+        </canvas>
+        <!-- <div class="game-zone">
+            <img src="assets/images/car2.png" class="car" style="left: 0%; bottom: 33%">
+        </div> -->
+
+        <!-- препятсвия  -->
+        <!-- <div class="block" style="left: 50%; bottom: 60%"></div>
+        <div class="block" style="left: 40%; bottom: 35%"></div>
+        <div class="block" style="left: 90%; bottom: 35%"></div>
+        <div class="block" style="left: 20%; bottom: 46%"></div>
+        <div class="block" style="left: 70%; bottom: 46%"></div> -->
+        <!-- / препятсвия -->
+    </div>
+    
+    <!-- </div> -->
+</body>
+
+<script src="assets/js/main.js" type="text/javascript"></script>
+
+</html>

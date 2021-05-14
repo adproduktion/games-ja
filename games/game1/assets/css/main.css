@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* sizes */
+.w-50 {
+    width: 50%;
+}
+.w-100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+/* / sizes */
+
+/* screens */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 400;
+    color: white;
+}
+/* / screens */
+
+/* screen login */
+.screen-login form {
+    margin-top: 30px;
+}
+.screen-login input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 6px;
+    margin-top: 12px;
+}
+.selection-cars {
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+.selection-car {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    transform: rotate(90deg);
+    opacity: 1
+}
+.selected-car {
+    filter: drop-shadow(0 0 20px white);
+}
+/* / screen login */
+
+/* flex */
+.flex {
+    display: flex;
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+/* / flex */
+
+.hidden {
+    display: none;
+}
+
+#screen-results{
+    display: none;
+}
+#alert-success{
+    display: none;
+}
+#alert-danger{
+    display: none;
+}
+/* header */
+header {
+    background: rgba(128, 128, 128, 0.7);
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 300;
+}
+/* / header */
+
+/* game zone */
+.screen-game{
+    display: none;
+}
+.game-zone {
+    width: 100vw;
+    height: 100vh;
+    /* background: url(../images/bg.jpg); */
+    background-size: contain;
+}
+#game-zone-angry {
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    z-index: 300;
+    opacity: 0.3;
+    display: none;
+}
+.game-element {
+    position: absolute;
+}
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+}
+.alert-success {
+    background: green;
+}
+.alert-danger {
+    background: red;
+}
+.block {
+    width: 55px;
+    height: 60px;
+    background: url(../images/block.png);
+    background-size: contain;
+    position: absolute;
+}
+.car {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    object-fit: cover;
+}
+/* / game zone */
